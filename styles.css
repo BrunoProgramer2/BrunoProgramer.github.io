@@ -12,9 +12,14 @@
     box-sizing: border-box;
 }
 
-body {
+h1,
+h2 {
     font-family: var(--font);
 }
+
+/*body {
+    font-family: var(--font);
+}*/
 .form {
     width: 100%;
     max-width: 600px;
@@ -26,8 +31,13 @@ body {
     font-family: var(--font);
 }
 .form input {
+    background:lightcyan;
+    border-style: none;
+    border-radius:10px;
     height: 30px;
     margin: 0.5rem;
+    animation: text-color 2s linear infinite;
+    font-family: var(--font);
 }
 /*-- estilos de clases css --*/
 .btn {
@@ -41,4 +51,30 @@ body {
 }
 .btn:active {
     background: var(--btn-color-2);
+}
+
+@keyframes text-color {
+    0% {
+        color:transparent;
+    }
+
+    10% {
+        color:#00cfad;
+    }
+
+    30% {
+        color:indigo;
+    }
+
+    70% {
+        color:coral;
+    }
+
+    100% {
+        color:cyan;
+    }
+}
+
+::placeholder {
+    text-align:center;
 }
