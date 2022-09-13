@@ -1,0 +1,43 @@
+@import url(https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css);
+
+:root {
+    --btn-color-1: #90AFC5;
+    --btn-color-2: #798ae6;
+    --font: 'Victor mono', monospace
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font);
+}
+.form input {
+    height: 30px;
+    margin: 0.5rem;
+}
+/*-- estilos de clases css --*/
+.btn {
+    border-radius:7px;
+    border-style: none;
+    text-align: center;
+    width:80px;
+    height: 30px;
+    background: var(--btn-color-1);
+}
+.btn:hover {
+    background: var(--btn-color-2);
+}
