@@ -1,8 +1,8 @@
 @import url(https://cdn.jsdelivr.net/npm/victormono@latest/dist/index.min.css);
 
 :root {
-    --btn-color-1: #90AFC5;
-    --btn-color-2: #798ae6;
+    --btn-color-1: #94ffed;
+    --btn-color-2: #00cfad;
     --font: 'Victor mono', monospace;
 }
 
@@ -37,7 +37,8 @@ body {
     width:80px;
     height: 30px;
     background: var(--btn-color-1);
+    cursor: pointer;
 }
-.btn:hover {
+.btn:active {
     background: var(--btn-color-2);
 }
