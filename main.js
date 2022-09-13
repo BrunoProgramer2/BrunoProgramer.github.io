@@ -4,8 +4,10 @@ const infoAlert = (text,title) => {
         Swal.fire({
             title:title,
             text:text,
-            icon:'info'/*,
-            footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio =></a>`*/
+            icon:'info',
+            timer:8000,
+            timerProgressBar:true
+            /*,footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio =></a>`*/
         })
         resolve()
     })
@@ -16,7 +18,10 @@ const warningAlert = (textError,title) => {
         Swal.fire({
             title:title,
             text:textError,
-            icon:'warning'/*,
+            icon:'warning',
+            timer:8000,
+            timerProgressBar:true
+            /*,
             footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio</a>`*/
         })
         resolve()

@@ -3,7 +3,7 @@
 :root {
     --btn-color-1: #90AFC5;
     --btn-color-2: #798ae6;
-    --font: 'Victor mono', monospace
+    --font: 'Victor mono', monospace;
 }
 
 * {
