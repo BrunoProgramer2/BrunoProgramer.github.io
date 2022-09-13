@@ -38,7 +38,7 @@ const app = new Vue({
     },
     methods: {
         async changeText () {
-            this.text == '' ? await warningAlert('no se a escrito nada','advertencia') : await infoAlert(this.text,title)
+            this.text === '' ? await warningAlert('no se a escrito nada','advertencia') : await infoAlert(this.text,title)
             this.text = ''
         }
     }
