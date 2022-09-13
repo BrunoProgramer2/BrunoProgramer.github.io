@@ -19,7 +19,7 @@ const warningAlert = (textError,title) => {
             title:title,
             text:textError,
             icon:'warning',
-            timer:8000,
+            timer:4000,
             timerProgressBar:true
             /*,
             footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio</a>`*/
