@@ -1,11 +1,11 @@
-const url = `https://azure.microsoft.com/${navigator.language}/`
+// const url = `https://azure.microsoft.com/${navigator.language}/`
 const infoAlert = (text,title) => {
     return new Promise((resolve,reject) => {
         Swal.fire({
             title:title,
             text:text,
-            icon:'info',
-            footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio =></a>`
+            icon:'info'/*,
+            footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio =></a>`*/
         })
         resolve()
     })
@@ -16,8 +16,8 @@ const warningAlert = (textError,title) => {
         Swal.fire({
             title:title,
             text:textError,
-            icon:'warning',
-            footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio</a>`
+            icon:'warning'/*,
+            footer:`<a href="javascript:open('${url}')" style="color:yellow">Anuncio</a>`*/
         })
         resolve()
     })
