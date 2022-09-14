@@ -3,7 +3,7 @@ const infoAlert = (text,title) => {
     return new Promise((resolve,reject) => {
         Swal.fire({
             title:title,
-            text:text,
+            html:`<h1 style="animation: text-color 2s linear infinite;">${text}</h1>`,
             icon:'info',
             timer:8000,
             timerProgressBar:true
