@@ -1,5 +1,4 @@
 // const url = `https://azure.microsoft.com/${navigator.language}/`
-document.querySelector('html').lang = navigator.language
 const infoAlert = (text,title) => {
     return new Promise((resolve,reject) => {
         Swal.fire({
